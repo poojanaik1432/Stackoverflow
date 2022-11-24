@@ -28,7 +28,7 @@ public class Base {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--disable-notifications");
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);
-			System.setProperty("webdriver.chrome.driver", "D:\\Assignment\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./target/chromedriver.exe");
 			driver = new ChromeDriver(options);
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
@@ -50,7 +50,7 @@ public class Base {
 			//			}else
 			if(browserName.equalsIgnoreCase("chrome")){
 				System.out.println("in chrome");
-				System.setProperty("webdriver.chrome.driver", "D:\\Assignment\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "./target/chromedriver.exe");
 				driver=new ChromeDriver();
 				driver.manage().window().maximize();
 				//driver.manage().cook
